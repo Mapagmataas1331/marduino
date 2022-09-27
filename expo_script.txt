@@ -57,5 +57,5 @@ DELAY 500
 
 GUI r
 DELAY 1000
-STRING powershell -noexit "& ""C:\Program Files (x86)\Makaksi\Marduino\marduino.ps1"""
+STRING powershell "& ""C:\Program Files (x86)\Makaksi\Marduino\marduino.ps1"""
 ENTER
