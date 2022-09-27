@@ -1,5 +1,5 @@
 # Marduino 
-###### **Marduino** is *[ma.kak.si](https://ma.kak.si)'s* arduino badusb project.
+**Marduino** is *[ma.kak.si](https://ma.kak.si)'s* arduino badusb project.
 
 **Сontent:**
 * [duckduino](https://github.com/Seytonic/Duckduino-microSD) - arduino sketch to use ducky scripts from arduino device.
