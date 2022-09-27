@@ -42,6 +42,8 @@ Write-Host "Come back later for next updates!"
 Start-Sleep -Seconds 1
 Write-Host ""
 Write-Host "Bye! :)"
+Start-Sleep -Seconds 1
+Write-Host ""
 $userInput::BlockInput($false) | Out-Null
 Read-Host -Prompt "Press Enter to continue"
 Clear-Host
