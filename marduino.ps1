@@ -7,10 +7,10 @@ $userInput = Add-Type -MemberDefinition $code -Name UserInput -Namespace UserInp
 $userInput::BlockInput($true) | Out-Null
 
 Write-Host ""
-Write-Host "Hello!"
+Write-Host " Hello!"
 Start-Sleep -Seconds 1
 Write-Host ""
-Write-Host "Now i'm going to get back your language list"
+Write-Host " Now i'm going to get back your language list"
 Start-Sleep -Seconds 1
 Write-Host ""
 if (Test-Path -Path C:\WinUserLanguageList.json -PathType Leaf) {
@@ -27,25 +27,25 @@ if (Test-Path -Path C:\WinUserLanguageList.json -PathType Leaf) {
         $langCollection += $lang }
     Set-WinUserLanguageList $langCollection -Force
     Remove-Item C:\WinUserLanguageList.json
-    Write-Host "Your Language list was successfully changed."
+    Write-Host " Your Language list was successfully changed."
     }
-else { Write-Host "It looks like i don't have anything to change." }
+else { Write-Host " It looks like i don't have anything to change." }
 Start-Sleep -Seconds 1
 Write-Host ""
-Write-Host "Great!"
+Write-Host " Great!"
 Start-Sleep -Seconds 1
 Write-Host ""
-Write-Host "Realy, that's all i can do now.("
+Write-Host " Realy, that's all i can do now.("
 Start-Sleep -Seconds 1
 Write-Host ""
-Write-Host "Come back later for next updates!"
+Write-Host " Come back later for next updates!"
 Start-Sleep -Seconds 1
 Write-Host ""
-Write-Host "Bye! :)"
+Write-Host " Bye! :)"
 Start-Sleep -Seconds 1
 Write-Host ""
 $userInput::BlockInput($false) | Out-Null
-Read-Host -Prompt "Press Enter to continue"
+Read-Host -Prompt " Press Enter to continue"
 Clear-Host
 Write-Host ""
 Write-Host " +-------------------------------------------------------------+"
@@ -54,5 +54,5 @@ Write-Host " |                                                             |"
 Write-Host " |            And also check my website: ma.kak.si!            |"
 Write-Host " +-------------------------------------------------------------+"
 Write-Host ""
-Read-Host -Prompt "Press Enter to exit"
+Read-Host -Prompt " Press Enter to exit"
 exit
