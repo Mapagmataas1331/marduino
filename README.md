@@ -1,4 +1,4 @@
 # Marduino 
-Marduino is ma's arduino badusb project. [![Cult Of Martians][cult-img]][cult]
+Marduino is ma's arduino badusb project.
 
 [duckduino]{https://github.com/Seytonic/Duckduino-microSD}
